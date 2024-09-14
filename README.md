@@ -1,1 +1,1 @@
-# 52200064_NguyenGiaKhanh_JavaTechnology
+# Get access to the "master" branch for checking out source code.
