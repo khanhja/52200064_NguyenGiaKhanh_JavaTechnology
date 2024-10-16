@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Lab05?useSSL=false&amp;allowPublicKeyRetrieval=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">1234567890</property>
+
+        <!-- Show SQL -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Generate table automatically -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Mappings -->
+        <mapping class="ORM.User"/>
+        <mapping class="ORM.Product"/>
+    </session-factory>
+</hibernate-configuration>
