@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- First bean using property tags -->
+    <bean id="product1" class="ex01.Product" scope="prototype">
+        <property name="id" value="1001"/>
+        <property name="name" value="Macbook Pro M1"/>
+        <property name="price" value="1000"/>
+        <property name="description" value="Apple Flagship"/>
+    </bean>
+
+    <!-- Second bean using constructor-arg tags -->
+    <bean id="product2" class="ex01.Product" scope="prototype">
+        <constructor-arg value="1002"/>
+        <constructor-arg value="iPhone 15 Pro Max"/>
+        <constructor-arg value="1200"/>
+        <constructor-arg value="Apple Flagship"/>
+    </bean>
+
+    <!-- Third bean must be singleton -->
+    <bean id="product3" class="ex01.Product">
+        <property name="id" value="1003"/>
+        <property name="name" value="iPad Pro M1"/>
+        <property name="price" value="300"/>
+        <property name="description" value="Apple Flagship"/>
+    </bean>
+
+</beans>
