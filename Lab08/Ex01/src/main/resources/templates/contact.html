@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<form action="/contact" method="post">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong>
+        <input type="email" name="email" placeholder="Enter your email" required>
+    </p>
+
+    <p><strong>Phone:</strong>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+    </p>
+
+    <h2>Personal information</h2>
+    <p><strong>Full Name:</strong>
+        <input type="text" name="fullName" placeholder="Enter your full name" required>
+    </p>
+
+    <p><strong>Gender:</strong><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+    </p>
+
+    <p><strong>Course:</strong>
+        <input type="text" name="course" placeholder="Enter your course" required>
+    </p>
+
+    <p><strong>Student ID:</strong>
+        <input type="text" name="studentId" placeholder="Enter your student ID" required>
+    </p>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Result</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<h2>Information received</h2>
+
+<p><strong>Email:</strong> <span th:text="${email}"></span></p>
+<p><strong>Phone:</strong> <span th:text="${phone}"></span></p>
+<p><strong>Full Name:</strong> <span th:text="${fullName}"></span></p>
+<p><strong>Gender:</strong> <span th:text="${gender}"></span></p>
+<p><strong>Course:</strong> <span th:text="${course}"></span></p>
+<p><strong>Student ID:</strong> <span th:text="${studentId}"></span></p>
+
+<a href="/contact">Go back</a>
+
+</body>
+</html>
